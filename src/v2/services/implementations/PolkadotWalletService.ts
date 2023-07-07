@@ -63,6 +63,7 @@ export class PolkadotWalletService extends WalletService implements IWalletServi
           {
             signer: await this.getSigner(senderAddress),
             nonce: -1,
+            assetId: '1984',
             tip,
           },
           (result) => {

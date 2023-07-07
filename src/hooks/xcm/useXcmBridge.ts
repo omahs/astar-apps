@@ -263,9 +263,9 @@ export function useXcmBridge(selectedToken: Ref<Asset>) {
         return;
       }
       if ((await getOriginChainNativeBal()) === '0') {
-        errMsg.value = t('warning.insufficientOriginChainNativeBalance', {
-          chain: selectedToken.value.originChain,
-        });
+        // errMsg.value = t('warning.insufficientOriginChainNativeBalance', {
+        //   chain: selectedToken.value.originChain,
+        // });
       }
     }
   };
